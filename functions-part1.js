@@ -5,8 +5,8 @@ let fox = "Jumped Over The Lazy Dog";
 // Goal: Create a function that adds "Over The Fence" to the end of the input string.
 // Error: The function should return "Jumped Over The Lazy Dog Over The Fence".
 function jumpOverFence(fox) {
-  // Your code here (Hint: Use string interpolation to append "Over The Fence")
-  // Example: return `${fox} Over The Fence`;
+  const ending = "Over The Fence";
+  return `${fox} ${ending}`;
 }
 
 // Test Challenge 1
