@@ -37,7 +37,7 @@ console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5]));
 // Goal: Filter an array to include only even numbers.
 // Error: Array with incorrect even numbers or missing even numbers.
 function filterEvenNumbers(arr) {
-  // Your code here (Hint: Use the filter method)
+
    return arr.filter(num => num % 2 === 0);
 }
 
@@ -47,7 +47,7 @@ console.log(filterEvenNumbers([1, 2, 3, 4, 5])); // Expected: [2, 4]
 // Goal: Shift the array by a given number of steps, wrapping around.
 // Error: Incorrect shifted array.
 function filterArray(arr, steps) {
-  // Your code here (Hint: Use slice and concat methods)
+
     return arr.slice(steps).concat(arr.slice(0, steps));
 }
 
@@ -57,7 +57,7 @@ console.log(filterArray([1, 2, 3, 4, 5], 2)); // Expected: [3, 4, 5, 1, 2]
 // Goal: Rotate the array by a given number of steps, wrapping around in the opposite direction.
 // Error: Incorrect rotated array.
 function rotateArray(arr, steps) {
-  // Your code here (Hint: Use slice and concat methods)
+
   return arr.slice(arr.length - steps).concat(arr.slice(0, arr.length - steps));
 }
 console.log(rotateArray([1, 2, 3, 4, 5], 2)); // Expected: [4, 5, 1, 2, 3]
