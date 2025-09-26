@@ -16,6 +16,7 @@ console.log(jumpOverFence(fox)); // Expected: "Jumped Over The Lazy Dog Over The
 // Goal: Create a function that returns true if a number is even, false if odd.
 // Error: Incorrect true/false return value based on even/odd check.
 function isEvenOrOdd(num) {
+   return num % 2 === 0;
   // Your code here (Hint: Use the modulus operator % to check for remainder when divided by 2)
   // Example: return num % 2 === 0;
 }
@@ -28,6 +29,7 @@ console.log(isEvenOrOdd(5));  // Expected: false
 // Goal: Convert Celsius to Fahrenheit using the formula (C * 9/5) + 32.
 // Error: Incorrect Fahrenheit conversion result.
 function celsiusToFahrenheit(celsiusNumber) {
+  return (celsiusNumber * 9/5) + 32;
   // Your code here (Hint: Apply the formula (C * 9/5) + 32)
   // Example: return (celsiusNumber * 9/5) + 32;
 }
@@ -40,6 +42,7 @@ console.log(celsiusToFahrenheit(0));  // Expected: 32
 // Goal: Find the largest number in an array.
 // Error: Incorrect maximum number returned.
 function findMaxNumber(arr) {
+   return Math.max(...arr);
   // Your code here (Hint: Use Math.max(...arr))
   // Example: return Math.max(...arr);
 }
@@ -51,6 +54,7 @@ console.log(findMaxNumber([1, 2, 3, 4, 5])); // Expected: 5
 // Goal: Log "Hello World" to the console after 2 seconds.
 // Error: "Hello World" not logged or logged immediately, not after 2 seconds.
 function sayHelloWorld() {
+   setTimeout(() => console.log("Hello World"), 2000);
   // Your code here (Hint: Use setTimeout to delay the console.log)
   // Example: setTimeout(() => console.log("Hello World"), 2000);
 }
